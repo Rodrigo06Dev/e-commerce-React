@@ -10,8 +10,8 @@ const Header = () => {
         </h1>
         <nav className='header__nav'>
           <div className='header__item'><NavLink className='header__link' to='/login'><i className="fa-regular fa-user"></i></NavLink></div>
-          <div className='header__item'><NavLink className='header__link' to='/purchases'></NavLink></div>
-          <div className='header__item'><NavLink className='header__link' to='/cart'></NavLink></div>
+          <div className='header__item'><NavLink className='header__link' to='/purchases'><i className="fa-solid fa-bag-shopping"></i></NavLink></div>
+          <div className='header__item'><NavLink className='header__link' to='/cart'><i className="fa-brands fa-opencart"></i></NavLink></div>
         </nav>
     </header>
   )
