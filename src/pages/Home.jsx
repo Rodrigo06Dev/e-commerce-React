@@ -16,6 +16,7 @@ useEffect(() => {
 
   return (
     <main className="home">
+      <h1>Hola Putos</h1>
       <div className="home__container">
         {
           products?.map(product => (
