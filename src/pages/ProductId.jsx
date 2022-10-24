@@ -20,13 +20,14 @@ const ProductId = () => {
   console.log(product);
   return (
     <div>
+      {product && <SliderImgs product={product}/>}
       <ProductInfo
         product={product}
       />
       <SimilarProduct
         product={product}
       />
-    </div >
+    </div>
   )
 }
 
