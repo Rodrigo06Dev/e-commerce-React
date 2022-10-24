@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     height: 70px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #eee;
 
 }
 .header__title{
@@ -25,13 +25,9 @@
     align-items: center;
     height: 100%;
     cursor: pointer;
+    border-left: 2px solid #eee;
 }
 .header__item a{    
     color: #ABABAB;
     font-size: 20px;
-}
-.header__item:nth-child(1),
-.header__item:nth-child(2){    
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
 }

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ProductInfo from '../components/home/productId/ProductInfo'
 import SimilarProduct from '../components/home/productId/SimilarProduct'
+import SliderImgs from '../components/home/productId/SliderImgs'
 
 const ProductId = () => {
   const [product, setProduct] = useState()
@@ -25,7 +26,7 @@ const ProductId = () => {
       <SimilarProduct
         product={product}
       />
-    </div>
+    </div >
   )
 }
 
