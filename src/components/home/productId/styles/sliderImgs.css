@@ -1,7 +1,8 @@
 .slider {
-    padding: 20px 50px;
+    padding: 13px 20px;
     position: relative;
     max-width: 600px;
+    height: fit-content;
 }
 
 .slider__static {
@@ -30,7 +31,7 @@
 }
 
 .slider__next {
-    right: 5px;
+    right: 10px;
 }
 
 
@@ -43,11 +44,33 @@
 
 .slider__img-container {
     width: calc(100%/3);
-    padding: 10px;
+    padding: 5px;
 }
 
 .slider__img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@media (min-width: 700px) {
+    .slider {
+        top: 50%;
+        padding: 20px 15px;
+    }
+
+    .slider__img {
+        display: flex;
+        height: 350px;
+        list-style: none;
+        transition: .5s ease-in-out;
+    
+    }
+
+    .slider__static {
+        width: 100%;
+        max-width: 500px;
+        height: 350px;
+        overflow: hidden;
+    }
 }
