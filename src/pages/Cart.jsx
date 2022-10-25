@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import CartProduct from '../components/cart/CartProduct'
 import { getAllProductCart, setCartGlobal } from '../store/slices/cart.slice'
 import getConfig from '../utils/getConfig'
+import './styles/cart.css'
 
 const Cart = () => {
 
@@ -46,20 +47,26 @@ const Cart = () => {
       
   }
 
+  console.log(cart);
   return (
     <div className="cart">
+      <h2 className='cart__title'>Cart</h2>
       <div className="cart__container">
-      {
-        cart?.products.map(product => (
-            <CartProduct
-              key={product.id}
-              product={product}
-            />
-        ))
-      }
+        <div className="cart__container__products">
+          {
+            cart?.products.map(product => (
+                <CartProduct
+                  key={product.id}
+                  product={product}
+                />
+            ))
+          }
+        </div>
       </div>
-      <h2>Total: ${total}</h2>
-      <button onClick={handlePurchases}>Buy Now</button>
+      <div className="cart__container__buy">
+        <h2 className='buy__title'>Total: ${total}</h2>
+        <button className='by__btn' onClick={handlePurchases}>Checkout</button>
+      </div>
     </div>
   )
 }
