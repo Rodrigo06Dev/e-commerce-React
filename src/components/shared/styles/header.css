@@ -7,7 +7,7 @@
     top: 0;
     background-color: rgb(255, 255, 255);
     z-index: 3000;
-
+overflow: hidden;
 }
 
 .header__logo{
