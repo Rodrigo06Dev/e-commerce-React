@@ -5,14 +5,21 @@
     border-bottom: 2px solid #eee;
     position: sticky;
     top: 0;
-    
+    background-color: rgb(255, 255, 255);
+    z-index: 3000;
 }
+
+.header__logo{
+    padding-top: 1em;
+    width: 80%;
+    object-fit: contain;
+}
+
 .header__title{
     flex: 1;
     padding-left: 20px;
-}
-.header__title a{    
-    color: var(--bg-color-red);
+    display: flex;
+    align-items: center;
 }
 
 .header__nav{
@@ -32,4 +39,10 @@
 .header__item a{    
     color: #ABABAB;
     font-size: 20px;
+}
+
+@media (min-width: 600px) {
+    .header__logo{
+        width: 50%;
+    }
 }
