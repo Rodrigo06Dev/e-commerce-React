@@ -1,7 +1,7 @@
 .slider {
     padding: 13px 20px;
     position: relative;
-    max-width: 600px;
+    max-width: 800px;
     height: fit-content;
 }
 
@@ -64,7 +64,6 @@
         height: 350px;
         list-style: none;
         transition: .5s ease-in-out;
-    
     }
 
     .slider__static {
