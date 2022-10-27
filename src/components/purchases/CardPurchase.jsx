@@ -1,19 +1,22 @@
 import React from 'react'
 
 const CardPurchase = ({purchase}) => {
+    const fecha = [new Date(purchase.updatedAt).toDateString()]
+
+    console.log(fecha.sort());
+
+    
   return (
-    <article className="purchase">
-        <header className="purchase__title">
-            {purchase.updatedAt}
-        </header>
-        <div className="purchase__body">
+    <article className='purchase__container'>
+        <header className='purchase__date'>{fecha}</header>
+        <div className='purchase__content' >
             {
                 purchase.cart.products.map(product => (
-                    <section key={product.id}>
-                        <h3>{product.title}</h3>
-                        <div>{product.productsInCart.quantity}</div>
-                        <div>{product.price * product.productsInCart.quantity}</div>
-                    </section>
+                    <div className='purchase__items' key={product.id}>
+                        <div className='purchase__items-title'>{product.title}</div>
+                        <div className='purchase__items-quantity'>{product.productsInCart.quantity}</div>
+                        <div className='purchase__items-price'>${product.price}</div>
+                    </div>
                 ))
             }
         </div>
