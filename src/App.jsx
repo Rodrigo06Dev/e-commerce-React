@@ -8,6 +8,7 @@ import LoginScreen from './pages/LoginScreen'
 import ProductId from './pages/ProductId'
 import ProtectedRoutes from './pages/ProtectedRoutes'
 import Purchases from './pages/Purchases'
+import SignUpScreen from './pages/SignUpScreen'
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/product/:id' element={<ProductId/>}/>
         <Route path='/login' element={<LoginScreen/>}/>
+        <Route path='/login/signup' element={<SignUpScreen/>}/>
 
         <Route element={<ProtectedRoutes/>}>
           <Route path='/cart' element={<Cart/>}/>

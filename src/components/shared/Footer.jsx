@@ -6,13 +6,13 @@ const Footer = () => {
   return (
     <footer className='footer__container'>
         <div className='footer__icon'>
-        <i class="fa-brands fa-instagram"></i>
+        <i className="fa-brands fa-instagram"></i>
         </div>
         <div className='footer__icon'>
-        <i class="fa-brands fa-linkedin"></i>
+        <i className="fa-brands fa-linkedin"></i>
         </div>
         <div className='footer__icon'>
-        <i class="fa-brands fa-twitter"></i>
+        <i className="fa-brands fa-twitter"></i>
         </div>
 
     </footer>
