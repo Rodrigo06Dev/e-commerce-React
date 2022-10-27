@@ -22,12 +22,13 @@ useEffect(() => {
 }, [])
 
 const handleCategory = category => {
+  setInputText('')
   setSelectCategory(category)
   setFilter(false)
+ 
 }
 const handleFilters = () => {
     setFilter(!filter)
-    console.log(filter);
 }
 useEffect(() => {
   if(inputText !== '' && products){
