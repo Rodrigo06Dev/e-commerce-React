@@ -60,6 +60,7 @@ useEffect(() => {
         <InputSearch
           setInputText = {setInputText}
           inputText = {inputText}
+          setFilterByCategory = {setFilterByCategory}
         />
         <div className='home__filter__mobile' onClick={handleFilters}>
           <i class="fa-solid fa-filter mobile__icon"></i>

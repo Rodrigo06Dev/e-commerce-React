@@ -34,6 +34,7 @@
 .category__item{
     font-weight: 300;
     margin: 5px 0;
+    cursor: pointer;
 }
 .category__item:hover{
     background-color: #f8555580;
