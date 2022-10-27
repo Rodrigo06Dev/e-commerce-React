@@ -2,10 +2,10 @@
     width: 100%;
     min-height: 81.1vh;
     display: flex ;
-    padding-left: 2em;
 }
 
 .home__filter__category{
+    display: none;
     align-self: flex-start;
     margin-top: 4em;
     width: 200px;    
@@ -49,4 +49,17 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (min-width: 500px) {
+    .home{
+        padding-left: 2em;
+    }
+    .home__filter__category{
+        display: block;
+        align-self: flex-start;
+        margin-top: 4em;
+        width: 200px;    
+    }
+
 }
