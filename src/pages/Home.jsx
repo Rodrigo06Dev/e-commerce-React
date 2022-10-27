@@ -11,6 +11,7 @@ const [inputText, setInputText] = useState('')
 const [filterByText, setFilterByText] = useState()
 const [selectCategory, setSelectCategory] = useState('')
 const [filterByCategory, setFilterByCategory] = useState()
+const [filter, setFilter] = useState(false)
 
 const products = useSelector(state => state.products)
 
@@ -22,9 +23,12 @@ useEffect(() => {
 
 const handleCategory = category => {
   setSelectCategory(category)
-  console.log(selectCategory);
+  setFilter(false)
 }
-
+const handleFilters = () => {
+    setFilter(!filter)
+    console.log(filter);
+}
 useEffect(() => {
   if(inputText !== '' && products){
     setFilterByText(products.filter( product => product.title.toLowerCase().includes(inputText.toLowerCase().trim())))
@@ -41,10 +45,9 @@ useEffect(() => {
 
   return (
     <main className="home">
-      <div className="home__filter__category">
+      <div className={`home__filter__category ${filter ? '' : 'filter__display'}`}>
         <div className="filter__header">
           <h3 className='filter__title'>Category</h3>
-          <p className='filter__symbol'>&#94;</p>
         </div>
         <ul className="category__list">
           <li className="category__item" onClick={() => handleCategory('')}>All Products</li>
@@ -58,7 +61,10 @@ useEffect(() => {
           setInputText = {setInputText}
           inputText = {inputText}
         />
-
+        <div className='home__filter__mobile' onClick={handleFilters}>
+          <i class="fa-solid fa-filter mobile__icon"></i>
+          <span className='mobile__txt'>filters</span>
+        </div>
         <div className="home__products">
           {
             filterByCategory ?
