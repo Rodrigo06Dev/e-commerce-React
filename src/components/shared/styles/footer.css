@@ -2,9 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
+    height: 80px;
     background-color: #f85555;
     gap: 1rem;
+    position: absolute;
+    width: 100%;
+    
 }
 
 .footer__icon{
