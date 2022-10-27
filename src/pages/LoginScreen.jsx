@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { Link } from 'react-router-dom'
 import './styles/loginScreen.css'
 
 const LoginScreen = () => {
@@ -59,6 +60,7 @@ if(isLogged){
         </div>
         <button className='login__btn'>Login</button>
       </form>
+      <p className='signup__p' >Don't have an account? <Link to='./signup' > <span className='signup__span' >Sign up</span> </Link></p>
     </div>
   )
 }
