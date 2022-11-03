@@ -12,7 +12,7 @@ overflow: hidden;
 
 .header__logo{
     padding-top: 1em;
-    width: 80%;
+    width: 70%;
     object-fit: contain;
 }
 
@@ -40,7 +40,6 @@ overflow: hidden;
     justify-content: center;
     align-items: center;
     height: 100%;
-    cursor: pointer;
     border-left: 2px solid #eee;
 }
 .header__item a{    
