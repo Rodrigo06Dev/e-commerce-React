@@ -43,7 +43,7 @@ overflow: hidden;
     border-left: 2px solid #eee;
 }
 .header__item a{    
-    color: #ABABAB;
+    color: var(--bg-color-red);
     font-size: 20px;
 }
 
